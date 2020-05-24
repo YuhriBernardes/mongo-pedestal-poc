@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+docker run --rm -d \
+-p 3000:27017 \
+-e MONGO_INITDB_ROOT_USERNAME=backend \
+-e MONGO_INITDB_ROOT_PASSWORD=backend_pass \
+--name=database \
+mongo:4.2.6
